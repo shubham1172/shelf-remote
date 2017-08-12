@@ -69,7 +69,7 @@ function uploadImages(image1, image2, callback){
         }
         var options = {
           method: "POST",
-          url:"http://data." + config.DOMAIN + '/v1/query',
+          url:config.DOMAIN_DATA + '/v1/query',
           json: true,
           headers: {
             'Authorization': 'Bearer ' + admin.getToken()
