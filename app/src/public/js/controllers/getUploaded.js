@@ -3,7 +3,11 @@
  * get-books
  */
 app.controller('getUploaded', function($scope, $http) {
+<<<<<<< HEAD
     $http.get("https://dysprosium60.hasura-app.io/get-uploaded").success(function(response){
+=======
+    $http.get("https://dysprosium60.hasura-app.io//get-uploaded").success(function(response){
+>>>>>>> remdev/master
         $scope.uploads = response;
         if(response.length==0){
           $('#no-books').css('display','block');
@@ -37,14 +41,22 @@ app.controller('getUploaded', function($scope, $http) {
                     if(remove.status === 200||remove.status===304){
                         This.css('display','none');
                         This.next().css('display','inline');
+<<<<<<< HEAD
                         window.location.href = "https://dysprosium60.hasura-app.io/user-console.html#primary-info";
+=======
+                        window.location.href = "https://dysprosium60.hasura-app.io//user-console.html#primary-info";
+>>>>>>> remdev/master
                         location.reload();
                     }else{
                         console.log(remove.responseText);
                     }
                 }
             }
+<<<<<<< HEAD
             remove.open('GET','https://dysprosium60.hasura-app.io/remove-book?id='+bookId,true);
+=======
+            remove.open('GET','https://dysprosium60.hasura-app.io//remove-book?id='+bookId,true);
+>>>>>>> remdev/master
             remove.send(null);
         });
 
@@ -57,14 +69,22 @@ app.controller('getUploaded', function($scope, $http) {
                     if(addBook.status === 200){
                         This.css('display','none');
                         This.prev().css('display','block');
+<<<<<<< HEAD
                         window.location.href = "https://dysprosium60.hasura-app.io/user-console.html#primary-info";
+=======
+                        window.location.href = "https://dysprosium60.hasura-app.io//user-console.html#primary-info";
+>>>>>>> remdev/master
                         location.reload();
                     }else{
                         console.log(addBook.responseText);
                     }
                 }
             }
+<<<<<<< HEAD
             addBook.open('GET','https://dysprosium60.hasura-app.io/add-removed-book?id='+bookId,true);
+=======
+            addBook.open('GET','https://dysprosium60.hasura-app.io//add-removed-book?id='+bookId,true);
+>>>>>>> remdev/master
             addBook.send(null);
         });
     },500);

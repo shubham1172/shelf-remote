@@ -8,7 +8,11 @@ app.controller('searchBook', function($scope, $http){
         if(e.which == 13){
             console.log('pressed enter');
             var query = $('#search-box').val();
+<<<<<<< HEAD
             $http.get("https://dysprosium60.hasura-app.io/search?q="+query).success(function(response){
+=======
+            $http.get("https://dysprosium60.hasura-app.io//search?q="+query).success(function(response){
+>>>>>>> remdev/master
             $scope.books = response;
             console.log(response);
             });
@@ -49,7 +53,11 @@ app.controller('searchBook', function($scope, $http){
                                       }
                                   }
                               }
+<<<<<<< HEAD
                               photos.open('GET','https://dysprosium60.hasura-app.io/get-photos?id='+photoid,true);
+=======
+                              photos.open('GET','https://dysprosium60.hasura-app.io//get-photos?id='+photoid,true);
+>>>>>>> remdev/master
                               photos.send(null);
 
                           }else{
@@ -58,7 +66,11 @@ app.controller('searchBook', function($scope, $http){
                       }
                   }
                   console.log(bookId);
+<<<<<<< HEAD
                   bookReq.open('GET','https://dysprosium60.hasura-app.io/get-book?id='+bookId,true);
+=======
+                  bookReq.open('GET','https://dysprosium60.hasura-app.io//get-book?id='+bookId,true);
+>>>>>>> remdev/master
                   bookReq.send(null);
                 });
                 var collection = document.getElementsByClassName('card-image');
@@ -82,7 +94,11 @@ app.controller('searchBook', function($scope, $http){
                                 }
                         }
                 }
+<<<<<<< HEAD
                 photo.open('GET','https://dysprosium60.hasura-app.io/get-photos?id='+collection[it].childNodes[1].innerHTML,true);
+=======
+                photo.open('GET','https://dysprosium60.hasura-app.io//get-photos?id='+collection[it].childNodes[1].innerHTML,true);
+>>>>>>> remdev/master
                 photo.send(null);
             }
         }

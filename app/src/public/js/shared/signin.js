@@ -42,7 +42,11 @@ $(document).ready(function(){
               }
           }
          username = $("#username").val();
+<<<<<<< HEAD
          userReq.open('GET','https://dysprosium60.hasura-app.io/check-username?val='+username,true);
+=======
+         userReq.open('GET','https://dysprosium60.hasura-app.io//check-username?val='+username,true);
+>>>>>>> remdev/master
          userReq.send(null);
           }
 });
@@ -55,7 +59,11 @@ $(document).ready(function(){
             if(login.readystate = XMLHttpRequest.DONE){
                 if(login.status === 200){
                     //console.log(login.responseText);
+<<<<<<< HEAD
                     window.location.href = "https://dysprosium60.hasura-app.io/user-console.html";
+=======
+                    window.location.href = "https://dysprosium60.hasura-app.io//user-console.html";
+>>>>>>> remdev/master
                 }else{
                     $("#signin-form").prepend("<span style='color:crimson'>Invalid credentials<span>");
                 }
@@ -63,7 +71,11 @@ $(document).ready(function(){
         }
         var username = $("#username").val();
         var password = $("#password").val();
+<<<<<<< HEAD
         login.open('POST', 'https://dysprosium60.hasura-app.io/login', true);
+=======
+        login.open('POST', 'https://dysprosium60.hasura-app.io//login', true);
+>>>>>>> remdev/master
         login.setRequestHeader('Content-Type', 'application/json');
         login.send(JSON.stringify({username:username,password:password}));
     });

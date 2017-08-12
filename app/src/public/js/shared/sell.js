@@ -93,7 +93,11 @@ $("#photos-validation-button").on("click",function(){
                   }
               }
       }
+<<<<<<< HEAD
       streamReq.open('GET','https://dysprosium60.hasura-app.io/get-streams',true);
+=======
+      streamReq.open('GET','https://dysprosium60.hasura-app.io//get-streams',true);
+>>>>>>> remdev/master
       streamReq.send(null);
 
 
@@ -106,7 +110,11 @@ $("#photos-validation-button").on("click",function(){
                 if(postBook.status === 200){
                     $("#sell").html("<h3 style='color:blue'>Book Uploaded successfully!</h3>");
                     var i = setTimeout(function(){
+<<<<<<< HEAD
                             window.location.href = "https://dysprosium60.hasura-app.io/user-console.html#primary-info";
+=======
+                            window.location.href = "https://dysprosium60.hasura-app.io//user-console.html#primary-info";
+>>>>>>> remdev/master
                             location.reload();
                              },100);
                 }else{
@@ -125,7 +133,11 @@ $("#photos-validation-button").on("click",function(){
         var img1 = $("#img1-base64").text();
         var img2 = $("#img2-base64").text();
         var img3 = $("#img3-base64").text();
+<<<<<<< HEAD
         postBook.open('POST', 'https://dysprosium60.hasura-app.io/add-book', true);
+=======
+        postBook.open('POST', 'https://dysprosium60.hasura-app.io//add-book', true);
+>>>>>>> remdev/master
         postBook.setRequestHeader('Content-Type', 'application/json');
         var book = {name:name,author:author,publisher:publisher,condition_id:condition,price:price,year:year,stream_id:streamId[branch],memo:memo,image_1:img1,image_2:img2};
        console.log(book);

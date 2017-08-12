@@ -100,7 +100,11 @@ $(document).ready(function(){
                 }
             }
             var mobile = $("#mobile-edit").val();
+<<<<<<< HEAD
             editContact.open('GET','https://dysprosium60.hasura-app.io/edit-mobile?new_mobile='+mobile,true);
+=======
+            editContact.open('GET','https://dysprosium60.hasura-app.io//edit-mobile?new_mobile='+mobile,true);
+>>>>>>> remdev/master
             editContact.send(null);
         });
 
@@ -118,13 +122,21 @@ $('#logout').click(function(){
     logout.onload = function(){
         if(logout.readyState = XMLHttpRequest.DONE){
             if(logout.status === 200){
+<<<<<<< HEAD
                 window.location.href = "https://dysprosium60.hasura-app.io/logout.html";
+=======
+                window.location.href = "https://dysprosium60.hasura-app.io//logout.html";
+>>>>>>> remdev/master
             }else{
                 console.log(logout.responseText);
             }
         }
     }
+<<<<<<< HEAD
     logout.open('GET','https://dysprosium60.hasura-app.io/logout',true);
+=======
+    logout.open('GET','https://dysprosium60.hasura-app.io//logout',true);
+>>>>>>> remdev/master
     logout.send(null);
 });
 
@@ -168,7 +180,11 @@ $('#logout').click(function(){
                             }
                         }
                     }
+<<<<<<< HEAD
                     photos.open('GET','https://dysprosium60.hasura-app.io/get-photos?id='+photoid,true);
+=======
+                    photos.open('GET','https://dysprosium60.hasura-app.io//get-photos?id='+photoid,true);
+>>>>>>> remdev/master
                     photos.send(null);
 
                 }else{
@@ -177,7 +193,11 @@ $('#logout').click(function(){
             }
         }
         console.log(bookId);
+<<<<<<< HEAD
         bookReq.open('GET','https://dysprosium60.hasura-app.io/get-book?id='+bookId,true);
+=======
+        bookReq.open('GET','https://dysprosium60.hasura-app.io//get-book?id='+bookId,true);
+>>>>>>> remdev/master
         bookReq.send(null);
      });
         var collection = document.getElementsByClassName('card-image');
@@ -205,7 +225,11 @@ $('#logout').click(function(){
                     }
                 }
             }
+<<<<<<< HEAD
             bookReq.open('GET','https://dysprosium60.hasura-app.io/get-book?id='+bookId,true);
+=======
+            bookReq.open('GET','https://dysprosium60.hasura-app.io//get-book?id='+bookId,true);
+>>>>>>> remdev/master
             bookReq.send(null);
 
             $("#edit-book").on("click",function(){
@@ -215,7 +239,11 @@ $('#logout').click(function(){
                         if(postBook.status === 200){
                             $("#book-edit-modal").html("Book Edited successfully!");
                             var i = setTimeout(function(){
+<<<<<<< HEAD
                             window.location.href = "https://dysprosium60.hasura-app.io/user-console.html#primary-info";
+=======
+                            window.location.href = "https://dysprosium60.hasura-app.io//user-console.html#primary-info";
+>>>>>>> remdev/master
                             location.reload();
                              },100);
                         }else{
@@ -230,7 +258,11 @@ $('#logout').click(function(){
                 var year = $("#year-edit").val();
                 var price = $("#price-edit").val();
                 var memo = $("#memo-edit").val();
+<<<<<<< HEAD
                 postBook.open('POST', 'https://dysprosium60.hasura-app.io/edit-book', true);
+=======
+                postBook.open('POST', 'https://dysprosium60.hasura-app.io//edit-book', true);
+>>>>>>> remdev/master
                 postBook.setRequestHeader('Content-Type', 'application/json');
                 var book = {name:name,author:author,publisher:publisher,price:price,year:year,memo:memo,id:bookId};
             console.log(book);
@@ -256,7 +288,11 @@ function appendPhotos(collection, it){
                     }
             }
     }
+<<<<<<< HEAD
     photo.open('GET','https://dysprosium60.hasura-app.io/get-photos?id='+collection[it].childNodes[1].innerHTML,true);
+=======
+    photo.open('GET','https://dysprosium60.hasura-app.io//get-photos?id='+collection[it].childNodes[1].innerHTML,true);
+>>>>>>> remdev/master
     photo.send(null);
 }
 
