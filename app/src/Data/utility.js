@@ -5,7 +5,7 @@
  */
 
 var config = require("./../config.js");
-var domain = "http://filestore." + config.DOMAIN + "/v1/file";
+var domain = config.DOMAIN_FILE + "/v1/file";
 var request = require("request");
 var crypto = require("crypto");
 var admin = require('./../Authorization/admin.js');

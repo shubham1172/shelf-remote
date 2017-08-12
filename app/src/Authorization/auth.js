@@ -5,7 +5,6 @@
  */
 
 var config = require("./../config.js");
-var domain = "http://auth." + config.DOMAIN;
 var request = require('request');
 var util = require('./utility.js');
 var data = require('./../Data/data.js');
@@ -23,7 +22,7 @@ function login(req, res){
       };
       var options = {
         method: 'POST',
-        url: domain+'/login',
+        url: config.DOMAIN_AUTH+'/login',
         json: true,
         body: toSend
       }
@@ -92,7 +91,7 @@ function register(req, res){
        }
        var options = {
          method: "POST",
-         url: domain+'/signup',
+         url: config.DOMAIN_AUTH+'/signup',
          json: true,
          body: query
        }
@@ -138,7 +137,7 @@ function getInfo(req, res){
   }
   var options = {
     method: 'POST',
-    url: "http://data." + config.DOMAIN + '/v1/query',
+    url: config.DOMAIN_DATA + '/v1/query',
     json: true,
     body: query,
     headers: {

@@ -6,7 +6,6 @@
  */
 
  var config = require("./../config.js");
- var domain = "http://auth." + config.DOMAIN;
  var request = require('request');
 
  //get admin token
@@ -23,7 +22,7 @@
    }
    var options = {
      method: 'POST',
-     url: domain+'/login',
+     url: config.DOMAIN_AUTH+'/login',
      json: true,
      body: toSend
    }

@@ -4,7 +4,6 @@
  * This file manages all database transactions for auth
  */
 var config = require('./../config.js');
-var domain = "http://data." + config.DOMAIN;
 var request = require('request');
 
 
@@ -20,7 +19,7 @@ function getInfo(id, token, callback){
   }
   var options = {
     method: 'POST',
-    url: domain+'/v1/query',
+    url: config.DOMAIN_DATA+'/v1/query',
     headers: {
       'Authorization': 'Bearer '+token,
       'Content-Type': 'application/json'
@@ -49,7 +48,7 @@ function checkEligible(id, token, callback){
     }
     var options = {
       method: 'POST',
-      url: domain+'/v1/query',
+      url: config.DOMAIN_DATA+'/v1/query',
       headers: {
         'Authorization': 'Bearer '+ token,
         'Content-Type': 'application/json'

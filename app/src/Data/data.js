@@ -5,7 +5,6 @@
  */
 
  var config = require("./../config.js");
- var domain = "http://data." + config.DOMAIN;
  var request = require('request');
  var admin = require('./../Authorization/admin.js');
 
@@ -39,7 +38,7 @@
    }
    var options = {
      method: 'POST',
-     url: domain + '/v1/query',
+     url: config.DOMAIN_DATA + '/v1/query',
      json: true,
      headers: {
        'Authorization': 'Bearer ' + admin.getToken()
@@ -68,7 +67,7 @@
    }
    var options = {
      method: "POST",
-     url: domain + '/v1/query',
+     url: config.DOMAIN_DATA + '/v1/query',
      json: true,
      headers: {
        "Authorization": "Bearer " + admin.getToken()
@@ -97,7 +96,7 @@
    }
    var options = {
      method: "POST",
-     url: domain + '/v1/query',
+     url: config.DOMAIN_DATA + '/v1/query',
      json: true,
      headers: {
        "Authorization": "Bearer " + admin.getToken()
@@ -131,7 +130,7 @@
       }
       var options = {
         method: "POST",
-        url: domain + '/v1/query',
+        url: config.DOMAIN_DATA + '/v1/query',
         json: true,
         headers: {
           "Authorization": "Bearer " + admin.getToken()
@@ -171,7 +170,7 @@ function checkStream(stream_id, callback){
   }
   var options = {
     method: "POST",
-    url: domain + '/v1/query',
+    url: config.DOMAIN_DATA + '/v1/query',
     json: true,
     headers: {
       "Authorization": "Bearer " + admin.getToken()
@@ -205,7 +204,7 @@ function getCollegeId(user_id, callback){
   }
   var options = {
     method: "POST",
-    url: domain + '/v1/query',
+    url: config.DOMAIN_DATA + '/v1/query',
     json: true,
     headers: {
       "Authorization": "Bearer " + admin.getToken()
@@ -243,7 +242,7 @@ function editMobile(req, res){
      }
      var options = {
        method: "POST",
-       url: domain + '/v1/query',
+       url: config.DOMAIN_DATA + '/v1/query',
        json: true,
        headers: {
          "Authorization": "Bearer " + admin.getToken()

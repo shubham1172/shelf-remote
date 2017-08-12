@@ -15,7 +15,10 @@
  //HTTP_CODES used in app
  config.HTTP_CODES = {OK: 200, BAD_REQUEST: 400, FORBIDDEN: 403, SERVER_ERROR: 500};
  //DOMAIN
- config.DOMAIN = "dysprosium60.hasura-app.io";
+ config.DOMAIN_MAIN = "https://dysprosium60.hasura-app.io";
+ config.DOMAIN_AUTH = "https://data.dysprosium60.hasura-app.io";
+ config.DOMAIN_DATA = "https://auth.dysprosium60.hasura-app.io";
+ config.DOMAIN_FILE = "https://filestore.dysprosium60.hasura-app.io";
  //AUTH TOKEN
  config.TOKEN = undefined;
 

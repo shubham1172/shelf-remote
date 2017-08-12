@@ -47,7 +47,7 @@ var request = require("request");
            }
            var options = {
              method: "POST",
-             url: "http://data." + config.DOMAIN + '/v1/query',
+             url: config.DOMAIN_DATA + '/v1/query',
              json: true,
              headers: {
                "Authorization": "Bearer " + req.session.auth.token
@@ -173,7 +173,7 @@ function editBook(req, res){
       }
       var options = {
         method: "POST",
-        url: "http://data." + config.DOMAIN + '/v1/query',
+        url: config.DOMAIN_DATA + '/v1/query',
         json: true,
         headers: {
           "Authorization": "Bearer " + req.session.auth.token
@@ -214,7 +214,7 @@ function getBook(req, res){
     }
     var options = {
       method: "POST",
-      url: "http://data." + config.DOMAIN + '/v1/query',
+      url: config.DOMAIN_DATA + '/v1/query',
       json: true,
       headers: {
         "Authorization": "Bearer " + req.session.auth.token
@@ -270,7 +270,7 @@ function getBooks(req, res){
   }
   var options = {
     method: "POST",
-    url: "http://data." + config.DOMAIN + '/v1/query',
+    url: config.DOMAIN_DATA + '/v1/query',
     json: true,
     headers: {
       "Authorization": "Bearer " + req.session.auth.token
@@ -302,7 +302,7 @@ function getPhotos(req, res){
       }
       var options = {
         method: "POST",
-        url: "http://data." + config.DOMAIN + '/v1/query',
+        url: config.DOMAIN_DATA + '/v1/query',
         json: true,
         headers: {
           "Authorization": "Bearer " + req.session.auth.token
@@ -346,7 +346,7 @@ function getUploaded(req, res){
   }
   var options = {
     method: "POST",
-    url: "http://data." + config.DOMAIN + '/v1/query',
+    url: config.DOMAIN_DATA + '/v1/query',
     json: true,
     headers: {
       "Authorization": "Bearer " + req.session.auth.token
@@ -391,7 +391,7 @@ function search(req, res){
     }
     var options = {
       method: "POST",
-      url: "http://data." + config.DOMAIN + '/v1/query',
+      url: config.DOMAIN_DATA + '/v1/query',
       json: true,
       headers: {
         "Authorization": "Bearer " + req.session.auth.token
@@ -433,7 +433,7 @@ function changeStatus(req, res, status){
     }
     var options = {
       method: "POST",
-      url: "http://data." + config.DOMAIN + '/v1/query',
+      url: config.DOMAIN_DATA + '/v1/query',
       json: true,
       headers: {
         "Authorization": "Bearer " + req.session.auth.token
