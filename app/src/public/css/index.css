@@ -56,11 +56,7 @@ body{
     margin: auto;
     position:absolute;
     z-index:9999;
-<<<<<<< HEAD
     background:url("https://dysprosium60.hasura-app.io/img/loading.gif") no-repeat center center;
-=======
-    background:url("https://dysprosium60.hasura-app.io//img/loading.gif") no-repeat center center;
->>>>>>> remdev/master
 }
 
 #logout-box{

@@ -13,11 +13,7 @@ $(document).ready(function(){
           }
         }
       }
-<<<<<<< HEAD
       request.open('POST','https://dysprosium60.hasura-app.io/test-file',true);
-=======
-      request.open('POST','https://dysprosium60.hasura-app.io//test-file',true);
->>>>>>> remdev/master
       request.setRequestHeader('Content-Type', 'application/json');
       request.send(JSON.stringify({photo: event.target.result}));
     };

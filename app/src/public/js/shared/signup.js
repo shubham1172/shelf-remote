@@ -58,11 +58,7 @@ passCheck = false;
                   }
               }
       }
-<<<<<<< HEAD
       streamReq.open('GET','https://dysprosium60.hasura-app.io/get-streams',true);
-=======
-      streamReq.open('GET','https://dysprosium60.hasura-app.io//get-streams',true);
->>>>>>> remdev/master
       streamReq.send(null);
 
 //XHR for getting colleges - returns college name and ID
@@ -92,11 +88,7 @@ passCheck = false;
                   }
               }
       }
-<<<<<<< HEAD
       collegeReq.open('GET','https://dysprosium60.hasura-app.io/get-colleges',true);
-=======
-      collegeReq.open('GET','https://dysprosium60.hasura-app.io//get-colleges',true);
->>>>>>> remdev/master
       collegeReq.send(null);
 
 //Handling username-entry 
@@ -125,11 +117,7 @@ passCheck = false;
               }
           }
          username = $("#username").val();
-<<<<<<< HEAD
          userReq.open('GET','https://dysprosium60.hasura-app.io/check-username?val='+username,true);
-=======
-         userReq.open('GET','https://dysprosium60.hasura-app.io//check-username?val='+username,true);
->>>>>>> remdev/master
          userReq.send(null);
           }
 
@@ -211,11 +199,7 @@ function isEmail(testEmail) {
                           if(signup.status === 200||signup.status === 304){
 
                               $("#signup-box").html("You have been signed up! :)<br> Check your mail to activate your account.\
-<<<<<<< HEAD
                                                       <br> Then head <a href='https://dysprosium60.hasura-app.io/'>here</a> to login.");
-=======
-                                                      <br> Then head <a href='https://dysprosium60.hasura-app.io//'>here</a> to login.");
->>>>>>> remdev/master
 
                               $("#signup-box").append("<br><br><br><h2 style='color:blue'>Its free.</h2>\
                                                        <h2 style='color:yellow'>Its Open Sourced.</h2>\
@@ -225,11 +209,7 @@ function isEmail(testEmail) {
                         }
                       }
                   } 
-<<<<<<< HEAD
                       signup.open('POST', 'https://dysprosium60.hasura-app.io/register', true);
-=======
-                      signup.open('POST', 'https://dysprosium60.hasura-app.io//register', true);
->>>>>>> remdev/master
                       signup.setRequestHeader('Content-Type', 'application/json');
                       signup.send(JSON.stringify({name:name,username:username,year:year,email:email,stream_id:streamId[branch],college_id:collegeId[university],mobile:contact, password: password}));
                   }

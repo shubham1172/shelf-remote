@@ -27,11 +27,7 @@
                 }
             }
      }
-<<<<<<< HEAD
     streamReq.open('GET','https://dysprosium60.hasura-app.io/get-streams',true);
-=======
-    streamReq.open('GET','https://dysprosium60.hasura-app.io//get-streams',true);
->>>>>>> remdev/master
     streamReq.send(null)
   $('input.select-college').autocomplete({
     data: {
