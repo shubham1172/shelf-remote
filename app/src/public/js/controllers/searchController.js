@@ -10,9 +10,9 @@ app.controller('searchBook', function($scope, $http){
             var query = $('#search-box').val();
             $http.get("https://dysprosium60.hasura-app.io/search?q="+query).success(function(response){
             if(response.length==0){
-                 $('#no-books').css('display','block');
+                 $('#no-books-search').css('display','block');
             }else{
-                $('#no-books').css('display','none');
+                $('#no-books-search').css('display','none');
             }
             $scope.books = response;
             console.log(response);
