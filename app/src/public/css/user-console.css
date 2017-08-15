@@ -296,6 +296,6 @@ hr{
   margin-left: 150;
 }
 
-#no-books{
+#no-books,#no-books-explore,#no-books-search{
   display: none;
 }

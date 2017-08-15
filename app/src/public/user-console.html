@@ -165,6 +165,7 @@
             </div>
             </div>
             <div id="orders" ng-controller="getBooks">
+                <div id="no-books-explore">No one uploaded books from your college yet! :(</div>
                 <div class="card medium book" ng-repeat="book in books">
                     <div class="card-image">
                         <div class="photo_id">{{book.photo_id}}</div>
@@ -185,6 +186,7 @@
                 </div>
         </div>
         <div id="search-books" ng-controller="searchBook">
+            <div id="no-books-search">No such book found in your university! :(</div>
             <div class="card medium book searchbook" ng-repeat="book in books">
                     <div class="card-image">
                         <div class="photo_id">{{book.photo_id}}</div>
